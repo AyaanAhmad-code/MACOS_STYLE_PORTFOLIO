@@ -1,0 +1,128 @@
+.spotlight-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 18vh;
+  /* subtle blurred background to focus the user on the search */
+  background: rgba(0, 0, 0, 0.15);
+  animation: fade-in 0.12s ease-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.spotlight-container {
+  width: 100%;
+  max-width: 680px; /* Real Spotlight width */
+  background: rgba(45, 45, 50, 0.65); /* Authentic macOS dark mode translucency */
+  backdrop-filter: blur(70px) saturate(210%);
+  -webkit-backdrop-filter: blur(70px) saturate(210%);
+  border-radius: 12px;
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.45), 
+    0 0 0 0.5px rgba(255, 255, 255, 0.13), /* Crisp hardware-like border */
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+  /* Force macOS system fonts specifically here to guarantee exact matching */
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  animation: slide-down 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slide-down {
+  from { transform: translateY(-15px) scale(0.99); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.spotlight-input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.12);
+
+  .search-icon {
+    font-size: 22px;
+    margin-right: 14px;
+    opacity: 0.5;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+  }
+
+  input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 26px; /* True Spotlight size */
+    font-weight: 300; /* Thin macOS look */
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.95);
+    font-family: inherit;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.25);
+      font-weight: 300;
+    }
+  }
+}
+
+.spotlight-suggestions {
+  display: flex;
+  flex-direction: column;
+  padding: 6px; /* Padding creates gap from edges so selection background acts like macOS lists */
+  max-height: 45vh;
+  overflow-y: auto;
+
+  /* Custom subtle scrollbar */
+  &::-webkit-scrollbar { width: 6px; }
+  &::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 10px; }
+  &::-webkit-scrollbar-track { background: transparent; padding-right: 4px; }
+
+  .suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 2px;
+    border-radius: 6px; /* Items are rounded blocks internally */
+    cursor: default;
+    transition: background 0.05s ease;
+
+    &.selected {
+      background: #0061e0; /* Direct macOS accent blue */
+      
+      .sugg-name { color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,0.1); }
+      .sugg-type { color: rgba(255,255,255,0.7); }
+    }
+
+    .sugg-icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 14px;
+      border-radius: 5px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+    }
+
+    .sugg-name {
+      font-size: 14px; /* Proper macOS text size */
+      font-weight: 400; /* Regular weight */
+      letter-spacing: 0.01em;
+      color: rgba(255, 255, 255, 0.88);
+      flex: 1;
+    }
+
+    .sugg-type {
+      font-size: 11.5px;
+      letter-spacing: 0.02em;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.35);
+    }
+  }
+}

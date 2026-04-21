@@ -1,0 +1,111 @@
+/* ── Rnd wrapper ────────────────────────────────────────────────── */
+.mac-rnd {
+  z-index: 200 !important;
+}
+
+/* ── Window shell ───────────────────────────────────────────────── */
+.mac-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+
+  background: rgba(10, 10, 18, 0.75);
+  backdrop-filter: blur(50px) saturate(180%);
+  -webkit-backdrop-filter: blur(50px) saturate(180%);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.7),
+    0 0 0 0.5px rgba(255, 255, 255, 0.06),
+    0 0 40px rgba(96, 165, 250, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  color: var(--text-primary);
+  font-family: var(--font);
+
+  /* ── Maximized: full screen below navbar ────────────────────── */
+  &--max {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100dvh !important;
+    z-index: 9999;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  /* ── Titlebar ───────────────────────────────────────────────── */
+  .nav-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.55rem 0.85rem;
+    flex-shrink: 0;
+    user-select: none;
+
+    background: rgba(15, 15, 25, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+    .dots {
+      display: flex;
+      gap: 0.42rem;
+
+      .dot {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: filter 0.1s;
+
+        &:hover { filter: brightness(0.8); }
+
+        .dot-icon {
+          font-size: 7px;
+          font-weight: 800;
+          color: rgba(0, 0, 0, 0.55);
+          position: absolute;
+          pointer-events: none;
+        }
+      }
+      .red    { background: #ff5f57; border: 1px solid rgba(0,0,0,0.18); }
+      .yellow { background: #febc2e; border: 1px solid rgba(0,0,0,0.15); }
+      .green  { background: #28c840; border: 1px solid rgba(0,0,0,0.15); }
+    }
+
+    .win-title {
+      flex: 1;
+      text-align: center;
+      margin-right: 3.5rem;
+
+      p {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        letter-spacing: 0.01em;
+      }
+    }
+  }
+
+  /* ── Content ────────────────────────────────────────────────── */
+  .main-content {
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  /* ── Scrollbars ─────────────────────────────────────────────── */
+  *::-webkit-scrollbar       { width: 5px; height: 5px; }
+  *::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 4px; }
+  *::-webkit-scrollbar-track { background: transparent; }
+}
