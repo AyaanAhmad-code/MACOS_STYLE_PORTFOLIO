@@ -25,7 +25,7 @@ const getMenus = ({ setWindowsState, setMinimizedWindows, windowsState }) => [
     items: [
       { label: 'About Ayaan', action: () => setWindowsState(s => ({ ...s, note: true })) },
       { type: 'sep' },
-      { label: 'GitHub ↗', action: () => window.open('https://github.com/ayaanah287', '_blank') },
+      { label: 'GitHub ↗', action: () => window.open('https://github.com/AyaanAhmad-code', '_blank') },
       { label: 'LinkedIn ↗', action: () => window.open('https://linkedin.com/in/ayaanah287', '_blank') },
       { label: 'Email ↗', action: () => window.open('mailto:ayaanah287@gmail.com', '_blank') },
     ]
