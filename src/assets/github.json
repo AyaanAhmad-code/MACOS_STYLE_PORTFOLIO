@@ -1,47 +1,128 @@
 [
   {
     "id": 1,
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000",
-    "title": "Scheds - A Course Schedule Generator",
-    "description": "My proudest project yet, a comprehensive course schedule generator application built with ASP.NET Core MVC.",
-    "tags": ["ASP.NET Core", "C#", "Entity Framework", "SQL Server", "Bootstrap", "jQuery"],
-    "repoLink": "https://github.com/microsoft/dotnet",
-    "demoLink": "https://dotnet.microsoft.com/"
+    "image": "https://github.com/AyaanAhmad-code/Moodify/blob/main/frontend/public/dashboard.png?raw=true",
+    "title": "Moodify: AI Emotion-Based Music Player",
+    "description": "A MERN stack application that leverages real-time facial expression analysis to curate music matching your emotional state.",
+    "tags": ["React.js", "Node.js", "MongoDB", "MediaPipe API"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Moodify",
+    "demoLink": "https://moodify-bice-psi.vercel.app"
   },
   {
     "id": 2,
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    "title": "FinTrack - Personal Finance Dashboard",
-    "description": "A real-time finance tracker that visualizes spending habits using interactive charts and connects to banking APIs.",
-    "tags": ["React", "TypeScript", "Chart.js", "Node.js", "Express", "MongoDB"],
-    "repoLink": "https://github.com/facebook/react",
-    "demoLink": "https://react.dev/"
+    "image": "https://github.com/user-attachments/assets/76c9224f-7711-4039-8e70-d1c2ddb2dbc3",
+    "title": "ZenTask Productivity Dashboard",
+    "description": "A comprehensive productivity dashboard integrating a Pomodoro timer, daily planner, and dynamic themes.",
+    "tags": ["HTML", "CSS", "JavaScript", "WeatherAPI", "LocalStorage"],
+    "repoLink": "https://github.com/AyaanAhmad-code/ZenTask",
+    "demoLink": "https://zen-task-topaz.vercel.app"
   },
   {
     "id": 3,
-    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000",
-    "title": "SecureAuth - Backend Identity Service",
-    "description": "A robust backend authentication microservice featuring JWT implementation, role-based access control, and OAuth2 integration.",
-    "tags": ["Python", "Django", "PostgreSQL", "Docker", "Redis", "JWT"],
-    "repoLink": "https://github.com/django/django",
-    "demoLink": null
+    "image": "https://github.com/AyaanAhmad-code/Inventory-Management-System/blob/9c3e37deb7199751e533cdd1771f8842b6d96db4/Untitled.png?raw=true",
+    "title": "Inventory Management System",
+    "description": "A Django application offering a solution for managing business operations with an emphasis on modern web technologies.",
+    "tags": ["Python", "Django", "Bootstrap", "SQLite"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Inventory-Management-System",
+    "demoLink": "https://inventory-management-system-sand-gamma.vercel.app"
   },
   {
     "id": 4,
-    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1000",
-    "title": "ChatStream - Real-time Messaging App",
-    "description": "A lightweight chat application allowing users to create rooms and message instantly. Optimized for low latency communication.",
-    "tags": ["Vue.js", "Firebase", "Tailwind CSS", "Socket.io"],
-    "repoLink": "https://github.com/vuejs/core",
-    "demoLink": "https://vuejs.org/"
+    "image": "/projects/snake.png",
+    "title": "Snake Game",
+    "description": "A retro-style Snake Game built from scratch focusing on fundamental game logic, collision detection, and canvas rendering.",
+    "tags": ["JavaScript", "HTML5 Canvas", "CSS3"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Snake_Game",
+    "demoLink": "https://ayaanahmad-code.github.io/Snake_Game/"
   },
   {
     "id": 5,
-    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1000",
-    "title": "TerminalX - CLI Productivity Tool",
-    "description": "A command-line interface tool built to automate repetitive developer tasks and manage local environments efficiently.",
-    "tags": ["Rust", "Clap", "Tokio", "System API"],
-    "repoLink": "https://github.com/rust-lang/rust",
+    "image": "/projects/kanban.png",
+    "title": "Kanban Board",
+    "description": "A sleek Kanban board to manage tasks efficiently, featuring drag-and-drop functionality and local storage persistence.",
+    "tags": ["CSS Grid", "JavaScript", "Drag and Drop"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Kanban_Board",
+    "demoLink": "https://ayaanahmad-code.github.io/Kanban_Board/"
+  },
+  {
+    "id": 6,
+    "image": "/projects/imageedit.png",
+    "title": "Image Editor",
+    "description": "A web-based image manipulation tool to apply filters, crop, rotate, and adjust lighting on the fly.",
+    "tags": ["JavaScript", "CSS Filters", "HTML5"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Image_Editor",
+    "demoLink": "https://ayaanahmad-code.github.io/Image_Editor/"
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000",
+    "title": "Snitch Ecommerce",
+    "description": "A full-stack e-commerce project in active development, featuring robust backend architecture, responsive product grids, and complete shopping cart state handling.",
+    "tags": ["React.js", "Node.js", "MongoDB", "Express.js"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Snitch-Ecommerce",
     "demoLink": null
+  },
+  {
+    "id": 8,
+    "image": "https://github.com/user-attachments/assets/3910fc8a-ff8b-437d-814e-8df3097e5e08",
+    "title": "CleanPro Landing Page",
+    "description": "A modern and engaging landing page for 'CleanPro,' a service dedicated to advanced wardrobe care.",
+    "tags": ["HTML5", "CSS3", "Design Integration"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Dry_cleaning_landing_page",
+    "demoLink": "https://ayaanahmad-code.github.io/Dry_cleaning_landing_page/"
+  },
+  {
+    "id": 9,
+    "image": "https://github.com/user-attachments/assets/e120cded-3ba0-4d0c-b644-01a976e8386b",
+    "title": "BEIGES Sweaters Landing Page",
+    "description": "A minimalist and elegant landing page for a fashion brand incorporating artistic image collages and absolute positioning.",
+    "tags": ["HTML5", "CSS3", "Minimalist UI"],
+    "repoLink": "https://github.com/AyaanAhmad-code/landing_page_cloths",
+    "demoLink": "https://ayaanahmad-code.github.io/landing_page_cloths/"
+  },
+  {
+    "id": 10,
+    "image": "/projects/figma.png",
+    "title": "Figma Style Design Tool",
+    "description": "A web-based design tool interface mimicking Figma's aesthetic, built for quick prototyping.",
+    "tags": ["JavaScript", "HTML5", "UI Mockup"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Figma_style_design_tool",
+    "demoLink": "https://figma-style-design-tool-nu.vercel.app"
+  },
+  {
+    "id": 11,
+    "image": "/projects/alvy.png",
+    "title": "Alvy Static Page",
+    "description": "A visually appealing static site architecture developed precisely using SCSS.",
+    "tags": ["SCSS", "HTML5", "Responsive"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Alvy_staic_page",
+    "demoLink": "https://ayaanahmad-code.github.io/Alvy_staic_page/"
+  },
+  {
+    "id": 12,
+    "image": "/projects/dribbble.png",
+    "title": "Dribbble Landing Page",
+    "description": "A polished landing page replicating popular Dribbble UI patterns.",
+    "tags": ["HTML5", "CSS3", "Design Layouts"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Dribble_landing_page",
+    "demoLink": "https://ayaanahmad-code.github.io/Dribble_landing_page/"
+  },
+  {
+    "id": 13,
+    "image": "/projects/ape.png",
+    "title": "Ape Landing Page",
+    "description": "An aesthetic landing page with custom CSS styling and modern typography.",
+    "tags": ["CSS3", "HTML5", "UI Design"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Ape_landing_page",
+    "demoLink": "https://ayaanahmad-code.github.io/Ape_landing_page/"
+  },
+  {
+    "id": 14,
+    "image": "/projects/nothing.png",
+    "title": "Nothing Clone Website",
+    "description": "A clone of the 'Nothing' tech brand's website utilizing advanced UI elements and clean minimalism.",
+    "tags": ["CSS", "HTML5", "Clone"],
+    "repoLink": "https://github.com/AyaanAhmad-code/Nothing_landing_page",
+    "demoLink": "https://ayaanahmad-code.github.io/Nothing_landing_page/"
   }
 ]

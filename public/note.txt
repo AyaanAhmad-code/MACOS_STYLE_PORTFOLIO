@@ -1,7 +1,7 @@
 /**
  * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @author: Ayaan Ahmad
+ * @summary: MERN stack developer with hands-on experience building scalable web applications and RESTful APIs.
  */
 
 // --------------------------------------------------
@@ -10,94 +10,77 @@
 
 const TECH_STACK = {
   frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
+    "JavaScript (ES6+)",
+    "React.js",
+    "Next.js",
+    "HTML5 & CSS3",
+    "Tailwind CSS / Bootstrap",
+    "Redux Toolkit & Context API"
   ],
   backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "JWT & OAuth",
+    "GenAI APIs"
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+  database: ["MongoDB", "Mongoose", "Aggregation", "Indexing", "localStorage"],
+  tools: ["Git", "GitHub", "Postman", "Vercel"]
 };
 
 // --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
+// 2. PROJECT HIGHLIGHTS
 // --------------------------------------------------
 
-class ProfessionalHistory {
+class Projects {
   
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
-   */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
+  public async macOS_Portfolio(): Promise<any> {
+    const role = "Frontend Developer";
+    const highlight = "Built a responsive portfolio website mimicking a macOS desktop environment using React and Vite.";
+    const features = ["Draggable/Resizable windows", "Spotlight-style search", "Glassmorphism UI"];
+    return { role, highlight, features };
   }
 
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
-   */
-  public PixelPerfect_Studios(): void {
+  public Moodify_App(): void {
+    this.role = "Full Stack Engineer (MERN)";
+    this.focus = "AI Emotion-Based Music Player";
+    
+    // Developed a MERN stack application utilizing MediaPipe computer vision
+    // Engineered an AI-driven matching algorithm to filter songs
+  }
+
+  public ZenTask_Dashboard(): void {
     this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
+    this.focus = "Productivity Dashboard";
     
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
+    // Developed a productivity dashboard with Pomodoro timer & dynamic planner
+    // Implemented a robust CSS variable architecture (20+ themes)
   }
 }
 
 // --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
-// --------------------------------------------------
-
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
-}
-
-const trophyCabinet: HackathonWin[] = [
-  {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
-  },
-  {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
-  }
-];
-
-// --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
+// 3. ACADEMIC BACKGROUND & CERTIFICATIONS
 // --------------------------------------------------
 
 const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
+  ["Integral University, Lucknow", "Bachelor of Computer Application (B.C.A.) - 9.8 CGPA (May 2025)"]
 ]);
 
-export default new ProfessionalHistory();
+const certifications = [
+  {
+    title: "Introduction to Generative AI",
+    issuer: "Google Cloud (via Simplilearn)",
+    date: "Dec 2024"
+  }
+];
+
+export default new Projects();
 
 
 ```bash
 # TERMINAL OUTPUT
 # ---------------------------------------
-$ user --status
+$ ayaanahmad --status
 > Status: Open to Opportunities
 > Location: Global / Remote
 > Loading Assets... [||||||||||] 100%
