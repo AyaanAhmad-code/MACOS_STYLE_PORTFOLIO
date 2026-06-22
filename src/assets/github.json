@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/projects/",
+    "image": "/projects/ASCEND.png",
     "title": "Ascend E-commerce Platform",
     "description": "A full-stack e-commerce platform featuring a modern design, tailored for a seamless shopping experience. Includes robust features like Payment Gateway integration, Google OAuth 2.0, and secure password recovery via email links.",
     "tags": [
