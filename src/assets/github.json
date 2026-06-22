@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/projects/ascend.png",
+    "image": "/projects/",
     "title": "Ascend E-commerce Platform",
     "description": "A full-stack e-commerce platform featuring a modern design, tailored for a seamless shopping experience. Includes robust features like Payment Gateway integration, Google OAuth 2.0, and secure password recovery via email links.",
     "tags": [
@@ -10,8 +10,8 @@
       "OAuth 2.0",
       "Full Stack"
     ],
-    "repoLink": "https://github.com/AyaanAhmad-code/Ascend",
-    "demoLink": "https://ayaanahmad-code.github.io/Ascend/"
+    "repoLink": "https://github.com/AyaanAhmad-code/ASCEND-Ecommerce",
+    "demoLink": "https://ascend-ecommerce.onrender.com/"
   },
   {
     "id": 2,
